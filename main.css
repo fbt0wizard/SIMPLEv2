@@ -144,7 +144,7 @@ body, html {
     margin-bottom: 10%;
 }
 
-#awe {
+#awe, #awe2, #awe3, #awe4 {
     background: var(--primary-color);
     padding: 26px;
     border: 2px solid var(--primary-color);
@@ -174,6 +174,123 @@ transform: scale(1,1) translate(0px, 0px);
 }
 }
 
+/* Viewports */
+
+@media only screen and (max-width: 1012px) {
+    #awe, #awe2, #awe3, #awe4 {
+        padding: 13px;
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 834px) {
+    #awe, #awe2, #awe3, #awe4 {
+        padding: 10px;
+        font-size: 9px;
+        font-size: 61px;
+        font-size: 12px;
+    }
+
+    .subheading, .subheading2 {
+        font-size: 18px;
+    }
+
+    .heading {
+        font-size: 57px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #awe4 {
+        display: none;
+    }
+
+    .user-input {
+        justify-content: center;
+    }
+
+    .user {
+        width: 40%;
+    }
+
+    .hero-form {
+        padding: 2% 0% 1% 0%;
+    }
+
+    .subheading, .subheading2 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .hero-section {
+        display: grid;
+    }
+
+    .hero-content {
+        margin-bottom: 9%;
+    }
+
+    .bounce {
+        display: flex;
+        justify-content: center;
+        margin-top: 17%;
+    }
+
+    #awe, #awe2, #awe3 {
+        padding: 16px;
+        font-size: 25px;
+    }
+
+    #awe {
+        margin-left: 0;
+    }
+
+    .subheading, .subheading2 {
+        font-size: 21px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .btn2 {
+        text-align: center;
+        padding: 9px 42px 9px 42px;
+        font-size: 14px;
+        font-weight: bold;
+        background: #fff;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--primary-color);
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        overflow: hidden;
+        transition: all .5s;
+    }
+    
+    .btn2:hover {
+        color: #fff;
+        background: var(--primary-color);
+        padding: 10px 45px 10px 45px;
+        font-size: 15px;
+        border: 1px solid var(--primary-color);
+        box-shadow: none;
+    }
+
+    .btn {
+        margin-left: 19px;
+    }
+
+    .hero-form {
+        width: 80%;
+        margin: auto;
+    }
+
+    .subheading, .subheading2 {
+        font-size: 18px;
+    }
+
+}
 
 
 
