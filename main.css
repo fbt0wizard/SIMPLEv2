@@ -281,6 +281,17 @@ transform: scale(1,1) translate(0px, 0px);
     .btn {
         margin-left: 0;
     }
+
+    /* footer style */
+
+    #google {
+        width: 112px;
+    }
+
+    #apple {
+        width: 112px;
+        height: 37px;
+    }
 }
 
 @media only screen and (max-width: 390px) {
@@ -425,7 +436,7 @@ transform: scale(1,1) translate(0px, 0px);
 
 .email {
     margin-bottom: 21px;
-    width: 100%;
+    width: 208px;
 }
 
 .register {
