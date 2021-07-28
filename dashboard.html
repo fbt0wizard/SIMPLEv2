@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <script src="https://use.fontawesome.com/2997409806.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
 
@@ -27,24 +27,81 @@
         </header>
         <div class="l-navbar" id="nav-bar">
             <nav class="nav1">
-                <div> <a href="#" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">BBBootstrap</span> </a>
-                    <div class="nav_list"> <a href="#" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a> <a href="#" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users</span> </a> <a href="#" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Messages</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span> </a> <a href="#" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a> </div>
-                </div> <a href="/index.html" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
+                <div> <a href="#" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">GIXTRA</span> </a>
+                    <div class="nav_list"> <a href="#" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a> <a href="#" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">My Profile</span> </a> <a href="#" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Messages</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span> </a>
+                        <a href="/index.html" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
+                    </div>
+                </div> 
             </nav>
         </div>
         <!--Container Main start-->
-        <div class="mini-nav">
-                <ul class="nav nav-pills nav-justified">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="nav-link" href="#!"><i class="fa fa-podcast" aria-hidden="true"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/dashboard_share.html"><i class="fa fa-bullhorn" aria-hidden="true"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/dashboard_trend.html"><i class="fa fa-hashtag" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
+        <div class="tabs">
+            <div class="nav-buttons">
+                <div>
+                    <button class="tablink" onclick="openPage('Home', this, '#e84118')" id="defaultOpen"><i class="fa fa-podcast" aria-hidden="true"></i></button>
+                </div>
+                <div>
+                    <button class="tablink" onclick="openPage('News', this, '#e84118')"><i class="fa fa-bullhorn" aria-hidden="true"></i></button>
+                </div>
+                <div>
+                    <button class="tablink" onclick="openPage('Contact', this, '#e84118')"><i class="fa fa-hashtag" aria-hidden="true"></i></button>
+                </div>
+            </div>
+
+            <div id="Home" class="tabcontent">
+                <div class="spinner-grow" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+
+            <div id="News" class="tabcontent">
+                <div class="contact-form">
+                    <form action="">
+                        <input class="form-control form-control-sm" type="text" placeholder=".Share Your Gist" required>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="Contact" class="tabcontent">
+                <div class="spinner-grow text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-secondary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-success" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-danger" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-warning" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-info" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-dark" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                  
+            </div>
         </div>
         <!--Container Main end-->
 
