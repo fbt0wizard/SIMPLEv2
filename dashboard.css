@@ -334,7 +334,8 @@ a {
     }
 
     .header p {
-        margin-left: 50px;
+        margin-left: 40px;
+        font-size: 20px;
     }
 
     .noti {
