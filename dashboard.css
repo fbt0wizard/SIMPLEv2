@@ -40,7 +40,8 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    background-color: var(--white-color);
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px, rgba(0, 0, 0, 0.22) 0px 1px 12px;
     z-index: var(--z-fixed);
     transition: .5s
 }
@@ -196,7 +197,7 @@ a {
 
 .tabs {
     width: 100%;
-    margin: 6% auto 0 auto;
+    margin: 70px auto 0 auto;
 }
 
   
@@ -247,6 +248,21 @@ a {
     background-color: blue;
 } */
 
+.media img {
+    border-radius: 50%;
+    width: 80px;
+}
+
+.reaction {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.reaction p a {
+    color: rgba(0, 0, 0, 0.534);
+}
+
+
 @media screen and (min-width: 768px) {
     body {
         margin: calc(var(--header-height) + 1rem) 0 0 0;
@@ -254,7 +270,7 @@ a {
     }
 
     .header {
-        height: calc(var(--header-height) + 1rem);
+        /* height: calc(var(--header-height) + 1rem); */
         padding: 0 2rem 0 calc(var(--nav-width) + 2rem)
     }
 
@@ -278,5 +294,34 @@ a {
 
     .body-pd {
         padding-left: calc(var(--nav-width) + 188px)
+    }
+}
+
+@media only screen and (max-width: 762px) {
+    .contact-form input {
+        width: 100%;
+    }  
+    
+    .custom-file {
+        width: 80%;
+        margin-left: 10.9%;
+    }
+
+    .btn {
+        padding: 6px 55px 6px 55px;
+        margin-left: 34%;
+    }
+}
+
+@media only screen and (max-width: 388px) {
+    .btn {
+        margin-left: 22%;
+    }
+
+}
+
+@media only screen and (max-width: 456px) {
+    .media img {
+        width: 40px;
     }
 }
