@@ -424,11 +424,13 @@ transform: scale(1,1) translate(0px, 0px);
   
 /* The Close Button */
 .close {
-    display: none;
-    color: #3498db;
+    display: relative;
+    color: var(--primary-color);
     float: right;
     font-size: 28px;
     font-weight: bold;
+    position: relative;
+    margin: -38px 2px 0 0;
 }
   
 .close:hover, .close:focus {
